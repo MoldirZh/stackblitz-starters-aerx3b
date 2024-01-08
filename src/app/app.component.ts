@@ -12,7 +12,6 @@ import {
   selector: 'app-component',
   standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
   imports: [
     FormsModule,
     CommonModule,
