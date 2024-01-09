@@ -45,12 +45,5 @@ export class AppComponent {
     this.events = [];
   }
 
-  onEditorPreparing(e: any) {
-    if (e.dataField && e.editorName === 'dxSelectBox') {
-      e.editorName = 'dxLookup';
-      e.editorOptions.pageLoadMode = 'nextButton';
-      e.editorOptions.nextButtonText = 'Next';
-    }
-  }
   name = 'Angular';
 }

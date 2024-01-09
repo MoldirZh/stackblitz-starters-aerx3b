@@ -18,7 +18,6 @@
       (onSaved)="logEvent('Saved')"
       (onEditCanceling)="logEvent('EditCanceling')"
       (onEditCanceled)="logEvent('EditCanceled')"
-      (onEditorPreparing)="onEditorPreparing($event)"
     >
       <dxo-paging [enabled]="true"></dxo-paging>
       <dxo-editing
@@ -44,12 +43,14 @@
           <dxo-search [enabled]="true"></dxo-search>
         </dxo-header-filter>
         <dxi-validation-rule type="required"></dxi-validation-rule>
-        <dxo-lookup
-          [dataSource]="products"
-          displayExpr="product"
-          valueExpr="id"
-        >
-        </dxo-lookup>
+       
+          <dxo-lookup
+            [dataSource]="products"
+            displayExpr="product"
+            valueExpr="id"
+          >
+          </dxo-lookup>
+
       </dxi-column>
 
       <dxi-column dataField="StateID" caption="State" [width]="125">
