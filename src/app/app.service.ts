@@ -11,6 +11,7 @@ export interface Employee {
   Notes: string;
   Address: string;
   StateID: number;
+  ProductID?: number;
 }
 
 export interface State {

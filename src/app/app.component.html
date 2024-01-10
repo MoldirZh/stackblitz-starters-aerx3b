@@ -35,13 +35,8 @@
 
       <dxi-column
         caption="PRODUCT"
-        dataField="id"
-        dataType="string"
-        calculateDisplayValue="product"
+        dataField="ProductID"
       >
-        <dxo-header-filter>
-          <dxo-search [enabled]="true"></dxo-search>
-        </dxo-header-filter>
         <dxi-validation-rule type="required"></dxi-validation-rule>
        
           <dxo-lookup
