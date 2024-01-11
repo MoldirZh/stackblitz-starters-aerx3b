@@ -37,6 +37,14 @@ export class AppComponent {
     this.products = this.service.getProducts();
   }
 
+  onEditorPreparing(e: any) {
+    if (e.dataField && e.editorName === "dxSelectBox") {
+      e.editorName = "dxLookup";
+      e.editorOptions.pageLoadMode = "nextButton";
+      e.editorOptions.nextButtonText = "Next";
+    }
+  }
+
   logEvent(eventName: any) {
     this.events.unshift(eventName);
   }
